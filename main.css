@@ -22,13 +22,26 @@ header{
 header nav{
     background: transparent !important;
 }
-nav{
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+}
+nav li{
+    list-style: none;
+    padding: 1em 0;
+
 }
 nav a{
     padding: 1em 2.5em;
     display: inline-block;
     color: var(--text-color);
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: none;
 }
 .banner{
     background-image: url(../CS202/images/banner.jpg);
@@ -75,4 +88,27 @@ footer{
     width: 100%;
     padding: 2.6em;
     text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.card{
+    flex: 0 0 250px;
+    margin: 10px;
+}
+.card img{
+    max-width: 100%;
+}
+.card .text{
+    text-align: center;
+}
+.button{
+    width: 100%;
+    display: block;
+    background: #05a081;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
